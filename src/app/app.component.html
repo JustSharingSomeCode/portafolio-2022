@@ -1,19 +1,16 @@
-<nav>
-  <!--
-  <ul>
-    <li><a href="/about">Sobre Mí</a></li>
-    <li><a href="/projects">Proyectos</a></li>
-  </ul>
-  -->
-  <div class="menu">
-    <a href="/about">Sobre Mí</a>
-    <a href="/projects">Proyectos</a>
-  </div>
-  <div>
 
-  </div>
-</nav>
 
-<div>
+<div class="container">
+
+  <nav>
+    <div class="menu">
+      <a href="/about">Sobre Mí</a>
+      <a href="/projects">Proyectos</a>
+    </div>
+    <div>
+      <app-devicon-container class="float-right" [Icons]="[{name: 'GitHub', linkTo: 'https://github.com/JustSharingSomeCode'},{name: 'LinkedIn', linkTo: 'http://www.linkedin.com/in/oscar-julian-diaz'}]" IconSize="small"></app-devicon-container>
+    </div>
+  </nav>
+
   <router-outlet></router-outlet>
 </div>

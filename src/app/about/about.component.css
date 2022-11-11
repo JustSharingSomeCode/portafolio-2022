@@ -26,8 +26,8 @@
 .crtf-container{
     margin-top: 80px;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
 }
 

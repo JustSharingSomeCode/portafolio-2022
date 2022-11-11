@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IconData } from 'src/interfaces/icon-data';
 
 @Component({
   selector: 'app-devicon-container',
@@ -25,7 +26,7 @@ export class DeviconContainerComponent implements OnInit {
   gapSize : string = "gap-big";
 
   @Input()
-  Icons: string[] = [];
+  Icons: IconData[] = [];
 
   IconsList: { [key: string]: string } = {
     "Csharp": "devicon-csharp-plain",
@@ -41,7 +42,9 @@ export class DeviconContainerComponent implements OnInit {
     ".Net Core" : "devicon-dotnetcore-plain",
     "Unity" : "devicon-unity-original",
     "OpenTk" : "devicon-opengl-plain",
-    "Tomcat" : "devicon-tomcat-line"
+    "Tomcat" : "devicon-tomcat-line",
+    "GitHub" : "devicon-github-original",
+    "LinkedIn" : "devicon-linkedin-plain"
   };
 
 }
