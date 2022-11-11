@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolio-2022';
+
+  updateSelection(id : string)
+  {
+    console.log(document.getElementById(id));
+  }
 }

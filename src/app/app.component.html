@@ -4,8 +4,8 @@
 
   <nav>
     <div class="menu">
-      <a href="/about">Sobre Mí</a>
-      <a href="/projects">Proyectos</a>
+      <a id="a1" routerLink="/about" (click)="updateSelection('a1')">Sobre Mí</a>
+      <a id="a2" routerLink="/projects" (click)="updateSelection('a2')">Proyectos</a>
     </div>
     <div>
       <app-devicon-container class="float-right" [Icons]="[{name: 'GitHub', linkTo: 'https://github.com/JustSharingSomeCode'},{name: 'LinkedIn', linkTo: 'http://www.linkedin.com/in/oscar-julian-diaz'}]" IconSize="small"></app-devicon-container>
