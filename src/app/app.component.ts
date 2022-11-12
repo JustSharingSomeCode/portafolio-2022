@@ -18,7 +18,6 @@ export class AppComponent {
   current = false;
 
   updateSelection(id: string) {
-    console.log(this.router.url);
     if (id === 'a1') {
       this.current = false;
       return;
