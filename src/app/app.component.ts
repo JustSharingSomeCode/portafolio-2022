@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'portafolio-2022';
 
-  updateSelection(id : string)
-  {
-    console.log(document.getElementById(id));
+  constructor(private router: Router) {
+    if(this.router.url === '/'){
+      router.navigateByUrl('./');
+    }
+  }
+
+  current = false;
+
+  updateSelection(id: string) {
+    console.log(this.router.url);
+    if (id === 'a1') {
+      this.current = false;
+      return;
+    }
+
+    this.current = true;
   }
 }
+
